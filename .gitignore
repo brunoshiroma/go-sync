@@ -1,0 +1,13 @@
+.vscode
+webapp/out
+webapp/node_modules
+webapp/.next
+
+#ingnore all content of embed_html, minus the embed_fs.go
+embed_html/_next
+embed_html/404.html
+embed_html/index.html
+embed_html/vercel.svg
+embed_html/favicon.ico
+
+go_sync
