@@ -4,7 +4,9 @@ clean:
 	&& rm -rf webapp/out \
 	&& rm -rf embed_html/_next \
 	&& rm go_sync
-build:
+dep-webapp:
+	cd webapp && yarn install
+build: dep-webapp
 	cd webapp && yarn build && cd .. && go build cmd/go_sync.go
 start-webapp:
 	cd webapp && yarn dev
