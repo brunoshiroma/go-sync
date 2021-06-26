@@ -6,3 +6,5 @@ clean:
 	&& rm go_sync
 build:
 	cd webapp && yarn build && cd .. && go build cmd/go_sync.go
+start-webapp:
+	cd webapp && yarn dev
